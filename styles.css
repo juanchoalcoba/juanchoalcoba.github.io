@@ -414,18 +414,21 @@ html {
 }
 #portfolio .fila .proyecto {
     max-width: 450px;
+    height: 300px; /* Altura fija para los contenedores */
     border: 1px solid #000;
     margin: 0 10px;
     position: relative;
     overflow: hidden;
-}
-#portfolio .fila .proyecto img {
+  }
+  #portfolio .fila .proyecto img {
     width: 100%;
-    height: 100%;
+    height: 100%; /* Ajusta la altura al 100% */
     filter: grayscale(1);
     object-fit: cover;
     transition: .5s;
-}
+    cursor: pointer;
+  }
+
 #portfolio .fila .proyecto:hover img{
     filter: grayscale(0);
 }
