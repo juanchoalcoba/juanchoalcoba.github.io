@@ -103,7 +103,13 @@ body {
     padding: .3em ;
 }
 
+
+
+
 /*LARGE SIZE*/
+/* Dispositivos móviles */
+
+/* Tamaños grandes */
 @media (min-width: 700px) {
     body {
         padding: 0 4rem;
@@ -111,21 +117,20 @@ body {
 
     .contact-wrapper {
         display: grid;
-        grid-template-columns: 2fr 1fr;       
+        grid-template-columns: 2fr 1fr;
     }
 
-    .contact-wrapper > *{
+    .contact-wrapper > * {
         padding: 2em;
     }
 
     .contact-info h4,
     .contact-info ul,
     .contact-info p {
-         padding: 1em;
-         text-align: left;
+        padding: 1em;
+        text-align: left;
     }
 }
-
 
 
 
