@@ -2,6 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600&family=Poppins:wght@200;300;400;600&display=swap');
 
 
+
+#loading {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+  }
+
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  #loadingText {
+    animation: blink 3s infinite;
+    font-size: 40px;
+    color: white;
+  }
+  
+
 * {
     margin: 0;
     padding: 0;
@@ -17,12 +40,14 @@ html {
 
 #inicio {
     background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .5)), url("./img/wallpaper.jpg");
-    background-size: cover;
+    background-size:cover;
     background-position: center center;
     height: 100vh;
-    
-
 }
+
+
+
+
 .juantech {
     text-decoration: underline;
 }
@@ -149,7 +174,7 @@ html {
 }
 
 #inicio .contenido .presentacion .bienvenida {
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;

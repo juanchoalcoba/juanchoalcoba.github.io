@@ -1,3 +1,15 @@
+window.onload = function() {
+    var loading = document.getElementById('loading');
+    var content = document.getElementById('content');
+
+    // Oculta el loading después de tres segundos
+    setTimeout(function() {
+      loading.style.display = 'none';
+      content.style.display = 'block';
+    }, 3000);
+  };
+
+
 //FUNCION QUE ME APLICA EL ESTILO A LA OPCION SELECCIONADA EN EL MENU Y QUITA LA PREVIAMENTE SELECCIONADA
 function seleccionar(link){
     var opciones = document.querySelectorAll("#links a");
