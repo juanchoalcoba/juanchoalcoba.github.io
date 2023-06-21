@@ -61,7 +61,7 @@ html {
     animation: marquee 20s linear infinite;
     filter: drop-shadow(4px 4px 4px rgb(58, 100, 119));
     transition: color .7s ease-in-out;
-    
+    letter-spacing: 4px;
 }
 
 @keyframes marquee {
