@@ -1,14 +1,18 @@
-window.onload = function() {
-    var loading = document.getElementById('loading');
-    var content = document.getElementById('content');
+  window.onload = function() {
+            var loading = document.getElementById('loading');
+            var content = document.getElementById('content');
 
-    // Oculta el loading después de tres segundos
-    setTimeout(function() {
-      loading.style.display = 'none';
-      content.style.display = 'block';
-    }, 3000);
-  };
-
+            // Oculta el loading después de tres segundos
+            setTimeout(function() {
+                loading.style.opacity = '0';
+                loading.style.backgroundColor = '#000';
+                loading.style.pointerEvents = 'none';
+                content.style.display = 'block';
+                setTimeout(function() {
+                    content.style.opacity = '1';
+                }, 100);
+            }, 3000);
+        };
 
 //FUNCION QUE ME APLICA EL ESTILO A LA OPCION SELECCIONADA EN EL MENU Y QUITA LA PREVIAMENTE SELECCIONADA
 function seleccionar(link){
@@ -56,7 +60,7 @@ function efectoHabilidades(){
     }
 }
 
-var colors = ["#5190C2", "#83DC46 ", "#F35C3C", "#fff"]; // Lista de colores predefinidos
+var colors = ["#B9F87D", "#919292", "#8882FC", "#fff"]; // Lista de colores predefinidos
 var colorIndex = 0;
 
 function changeTextColor() {

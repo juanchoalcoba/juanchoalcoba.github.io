@@ -4,25 +4,48 @@
 
 
 #loading {
-    
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #000;
-  }
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
 
-  @keyframes blink {
+#loading.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
-  }
-  
-  #loadingText {
+}
+
+#loadingText {
     animation: blink 3s infinite;
-    font-size: 40px;
+    font-size: 35px;
     color: white;
-  }
+}
+
+#content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#content.show {
+    display: block;
+    opacity: 1;
+}
   
 
 * {
@@ -188,7 +211,9 @@ html {
 
 #inicio .contenido .presentacion h2 span {
     font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #2f88cb;
+    text-decoration:underline;
 }
 
 #inicio .contenido .presentacion .descripcion {
