@@ -59,7 +59,9 @@ html {
     white-space: nowrap;
     font-size: 27px;
     animation: marquee 20s linear infinite;
-    filter: drop-shadow(4px 4px 4px rgb(23, 23, 23));
+    filter: drop-shadow(4px 4px 4px rgb(58, 100, 119));
+    transition: color .7s ease-in-out;
+    
 }
 
 @keyframes marquee {
@@ -70,8 +72,9 @@ html {
 
 #inicio .contenido header .contenido-header h1 {
     text-align: center;
-    color: #3182c0;
+    color: #bbbfc2;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
     
 }
 

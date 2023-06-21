@@ -44,6 +44,16 @@ function efectoHabilidades(){
     }
 }
 
+var colors = ["#5190C2", "#83DC46 ", "#F35C3C", "#fff"]; // Lista de colores predefinidos
+var colorIndex = 0;
+
+function changeTextColor() {
+    var text = document.getElementById("text");
+    text.style.color = colors[colorIndex];
+    colorIndex = (colorIndex + 1) % colors.length; // Avanza al siguiente color en la lista
+}
+
+setInterval(changeTextColor, 1000);
 
 
 
