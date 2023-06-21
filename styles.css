@@ -1,19 +1,22 @@
 /*AGREGAMOS LA FUENTE QUE VAMOS A UTILIZAR EN LA PAGINA*/
-@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600&family=Poppins:wght@200;300;400;600&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Averia Libre', cursive;
+    font-family: 'Poppins', sans-serif;
 }
+
+
 
 html {
     scroll-behavior: smooth;
 }
 
 #inicio {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("./img/acers.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("./img/wallpaper.jpg");
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -41,9 +44,48 @@ html {
     padding: 10px 20px;
 }
 
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 50px;
+}
+
+.marquee {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    white-space: nowrap;
+    font-size: 27px;
+    animation: marquee 20s linear infinite;
+    filter: drop-shadow(4px 4px 4px rgb(23, 23, 23));
+}
+
+@keyframes marquee {
+    0% { left: 100%; }
+    100% { left: -170%; }
+}
+
+
 #inicio .contenido header .contenido-header h1 {
     text-align: center;
     color: #3182c0;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+#inicio .contenido header .contenido-header h1 {
+    animation: fadeAnimation 4s linear infinite;
+}
+
+@keyframes fadeAnimation {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
 #inicio .contenido header .contenido-header nav ul {
@@ -538,6 +580,34 @@ footer a {
     nav.responsive ul li {
         margin: 5px 0;
     }
+
+    .marquee-container {
+        width: 70%;
+        overflow: hidden;
+        position: relative;
+        height: 50px;
+    }
+
+    .marquee {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        white-space: nowrap;
+        font-size: 20px;
+        animation: marquee 20s linear infinite;
+        filter: drop-shadow(4px 4px 4px rgb(23, 23, 23));
+    }
+    
+    @keyframes marquee {
+        0% { left: 100%; }
+        100% { left: -380%; }
+    }
+
+
+
+
+
+
     #icono-nav{
         display: block;
         cursor: pointer;
