@@ -16,7 +16,7 @@ html {
 }
 
 #inicio {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("./img/wallpaper.jpg");
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .5)), url("./img/wallpaper.jpg");
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -45,6 +45,11 @@ html {
 }
 
 
+/*Menu desplegable */
+
+
+
+
 .marquee-container {
     width: 100%;
     overflow: hidden;
@@ -66,7 +71,7 @@ html {
 
 @keyframes marquee {
     0% { left: 100%; }
-    100% { left: -170%; }
+    100% { left: -230%; }
 }
 
 
@@ -109,6 +114,10 @@ html {
 #inicio .contenido header .contenido-header nav ul a:hover {
     color: #3386c4;
 }
+
+/*nueva seccion */
+
+
 
 #inicio .contenido header .contenido-header .redes-up a {
     text-decoration: none;
