@@ -47,7 +47,9 @@ html {
 
 /*Menu desplegable */
 
-
+.indice-nav {
+    z-index: 50;
+}
 
 
 .marquee-container {
