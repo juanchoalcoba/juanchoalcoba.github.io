@@ -1,0 +1,3 @@
+[submodule "shopCommerce"]
+	path = shopCommerce
+	url = https://github.com/juanchoalcoba/shopCommerce

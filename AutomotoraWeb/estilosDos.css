@@ -51,7 +51,7 @@ div .slideButton {
     font-size: 3rem;
     cursor: pointer;
     color: aliceblue;
-    filter:drop-shadow(5px 5px 3px rgb(224, 171, 57));
+    filter:drop-shadow(3px 3px 3px rgb(182, 181, 178));
     
     
 }
