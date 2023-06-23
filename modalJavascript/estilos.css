@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=League+Spartan:wght@300;400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;    
+    
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 section {
@@ -17,18 +20,19 @@ section {
    background-image: linear-gradient(to bottom, #280d58 0%, #51c4d6 100%);
 }
 
+
+
 section h2 {
-    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
     font-weight: 500;
     margin-bottom: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-shadow: 1px 4px 5px rgb(131, 143, 212);
 }
 
 section p {
     margin-bottom: 15px;
-    font-family:Roboto, sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: 5px;
     text-shadow: 2px 2px 2px white;
 }
@@ -43,9 +47,6 @@ section p {
     text-decoration: none;
     color: #283773;
     background: #fff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-    
 }
 
 .modal-container {
