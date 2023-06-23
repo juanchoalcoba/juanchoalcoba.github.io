@@ -64,14 +64,15 @@ html {
 #inicio {
     /*
     , url("./img/wallpaper.jpg");
-    background-size:cover;
-    background-position: center center;
-    height: 100vh;
+    
     */
 }
 
 #inicio.video-background {
-    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .5));
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, .3));
+    background-size:cover;
+    background-position: center center;
+    height: 100vh;
     position: relative;
   }
   
