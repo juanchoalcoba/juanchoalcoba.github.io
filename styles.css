@@ -86,7 +86,11 @@ html {
     z-index: -1;
   }
 
-
+  #inicio .contenido {
+    position: relative;
+    z-index: 1;
+    /* Estilos adicionales para el contenido */
+  }
 
 
 .juantech {
@@ -419,13 +423,18 @@ html {
 
 /*SECCION HABILIDADES*/
 .contenedor-skills {
-    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, .8)), url("./img/2.webp");
+    background: linear-gradient(#0a0850cc, rgba(23, 23, 45, 0.8)), url("./img/wallpaper.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     padding: 100px 0;
     text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.contenedor-skills h3 {
+    color: #dad7d7;
 }
 
 .contenedor-skills .skill {
@@ -436,6 +445,7 @@ html {
 .contenedor-skills .skill .info {
     display: flex;
     justify-content: space-between;
+    color: #dad7d7;
 }
 
 .contenedor-skills .skill .lista {
