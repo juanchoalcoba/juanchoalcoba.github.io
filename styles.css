@@ -62,11 +62,28 @@ html {
 }
 
 #inicio {
-    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .5)), url("./img/wallpaper.jpg");
+    /*
+    , url("./img/wallpaper.jpg");
     background-size:cover;
     background-position: center center;
     height: 100vh;
+    */
 }
+
+#inicio.video-background {
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .5));
+    position: relative;
+  }
+  
+  #inicio.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
 
 
 
