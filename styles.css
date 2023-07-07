@@ -32,7 +32,7 @@
 
 #loadingText {
     animation: blink 3s infinite;
-    font-size: 35px;
+    font-size: 25px;
     color: white;
 }
 
