@@ -1,6 +1,9 @@
 /*AGREGAMOS LA FUENTE QUE VAMOS A UTILIZAR EN LA PAGINA*/
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600&family=Poppins:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&family=Encode+Sans:wght@200;400&family=Ysabeau+SC:wght@200;700&display=swap');
 
+* {
+    font-family: 'Ysabeau SC', sans-serif;
+}
 
 
 #loading {
@@ -52,7 +55,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -95,7 +97,10 @@ html {
 
 .juantech {
     text-decoration: underline;
+    color: #1e72b1;
+    cursor: pointer;
 }
+
 
 #inicio .contenido header {
     background-color: rgba(0, 0, 0, .8);
@@ -150,7 +155,7 @@ html {
 #inicio .contenido header .contenido-header h1 {
     text-align: center;
     color: #bbbfc2;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Encode Sans', sans-serif;
     font-size: 30px;
     
 }
