@@ -63,7 +63,7 @@ html {
 
 #inicio {
     
-    background: radial-gradient(ellipse at left, #022735 0%, #1f1e1e 60%, #000000 100%);
+    background: radial-gradient(ellipse at center, #3c3c3c 0%, #333333 30%, #000000 100%);
     
 }
 
@@ -219,8 +219,13 @@ html {
 
 #inicio .contenido .presentacion h2 span {
     font-size: 45px;
-    color: #2f88cb;
+    color: #1f5681;
     text-decoration:underline;
+    filter: drop-shadow(1px 1px 1px white);
+}
+
+#inicio .contenido .presentacion h2 .span2 {
+    color: #921e1e;
 }
 
 #inicio .contenido .presentacion .descripcion {
