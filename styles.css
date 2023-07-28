@@ -58,12 +58,12 @@
 
 
 html {
+    background-color: #1f1e1e;
     scroll-behavior: smooth;
 }
 
 #inicio {
-    
-    background: radial-gradient(ellipse at center, #3c3c3c 0%, #333333 30%, #000000 100%);
+    background: radial-gradient(ellipse at center, #202020 5%, #130202 25%, #000203 100%);
     
 }
 
@@ -165,6 +165,7 @@ html {
     color: #fff;
     margin: 0 12px;
     font-weight: 400;
+    font-size: 16px;
     transition: .5s;
 
 }
@@ -183,6 +184,7 @@ html {
     display: inline-block;
     margin-left: 10px;
     transition: .5s;
+    font-size: 19px;
 }
 
 #inicio .contenido header .contenido-header .redes-up a:hover {
@@ -205,7 +207,7 @@ html {
 }
 
 #inicio .contenido .presentacion .bienvenida {
-    font-size: 17px;
+    font-size: 19px;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -264,6 +266,7 @@ html {
     padding: 100px 15px;
     color: #111135;
     display: flex;
+    border-radius: 20px;
 }
 
 #sobremi .contenedor-foto {
@@ -276,7 +279,7 @@ html {
     width: 100%;
     border-radius: 20px;
     background-color: #f3f3f3;
-    filter: drop-shadow(5px 5px 5px #3f3f3f);
+    filter: drop-shadow(3px 3px 3px #3f3f3f);
     border: 2px solid black;
 }
 
@@ -343,11 +346,15 @@ html {
     text-align: center;
     background: radial-gradient(ellipse at left, #022735 0%, #1f1e1e 60%, #000000 100%);
 }
+#servicios:hover {
+    background-color: #565656;
+}
+
 
 #servicios .titulo-seccion {
     font-size: 22px;
     text-transform: uppercase;
-    color: #9f9fbe;
+    color: #d0d0dd;
     text-decoration: underline;
     text-decoration-color: #640404;
     text-decoration-thickness: 5px;
@@ -365,7 +372,7 @@ html {
     background-color: #fff;
     padding: 30px;
     margin: 0 5px;
-    border-radius: 5px;
+    border-radius: 15px;
     transition: .5s;
 }
 
@@ -387,12 +394,15 @@ html {
     padding: 20px;
     margin-bottom: 25px;
 }
+
+
 #servicios .fila .servicio .icono i {
     font-size: 25px;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
+
 
 
 #servicios .fila .servicio hr {
@@ -527,6 +537,7 @@ html {
 #portfolio {
     max-width: 1100px;
     padding: 100px 0;
+    border-radius: 15px;
     margin: auto;
     background: radial-gradient(ellipse at center, #FFFFFF 0%, #DDDDDD 50%, #FFFFFF 100%);
 }
@@ -593,56 +604,71 @@ html {
 }
 /*SECCION CONTACTO*/
 #contacto {
-    padding: 100px 15px;
+    padding: 50px 15px;
 }
-#contacto .titulo-seccion{
+
+#contacto .titulo-seccion {
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     text-transform: uppercase;
-    color: #111135;
+    color: #1e72b1;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
 }
+
 #contacto .contenedor-form {
-    max-width: 1100px;
+    max-width: 600px; /* Reducir el ancho */
     margin: auto;
 }
+
 #contacto .contenedor-form .fila {
     margin-bottom: 15px;
 }
-#contacto .contenedor-form .mitad{
+
+#contacto .contenedor-form .mitad {
     display: flex;
     justify-content: space-between;
 }
+
 #contacto .contenedor-form input,
 #contacto .contenedor-form textarea {
-    padding: 20px;
-    border-radius: 20px;
+    padding: 15px; /* Reducir el padding */
+    border-radius: 10px; /* Reducir el radio del borde */
     border: none;
     font-size: 16px;
     border: 1px solid #919191;
 }
+
 #contacto .contenedor-form .mitad input {
     width: 48%;
 }
-#contacto .contenedor-form .input-full{
+
+#contacto .contenedor-form .input-full {
     width: 100%;
 }
+
 #contacto .btn-enviar {
     display: block;
     margin: auto;
     cursor: pointer;
-    transition: .5s;
-    padding: 10px 15px;
+    transition: .3s; /* Reducir la duración de la transición */
+    padding: 10px 20px; /* Aumentar el padding */
     font-size: 18px;
     font-weight: bold;
+    background-color: #1e72b1; /* Agregar un color de fondo */
+    color: #d5f3d1; /* Agregar un color de texto */
+    border: none;
+    border-radius: 10px; /* Agregar radio de borde */
 }
+
 #contacto .btn-enviar:hover {
-    background-color: #1e72b1;
-    color: #d5f3d1;
+    background-color: #0b5a91; /* Cambiar color de fondo en hover */
 }
+
+
+
 footer {
     background-color: #000;
     color: #fff;
@@ -657,6 +683,11 @@ footer a {
     margin: 5px;
     font-size: 26px;
 }
+footer a:hover {
+    color:#267ec2
+}
+
+
 /*Seccion Responsive*/
 
 @media screen and (max-width:800px) {
