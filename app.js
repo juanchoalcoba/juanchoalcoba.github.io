@@ -11,7 +11,7 @@
                 setTimeout(function() {
                     content.style.opacity = '1';
                 }, 100);
-            }, 2000);
+            }, 1500);
         };
 
 //FUNCION QUE ME APLICA EL ESTILO A LA OPCION SELECCIONADA EN EL MENU Y QUITA LA PREVIAMENTE SELECCIONADA
@@ -60,16 +60,6 @@ function efectoHabilidades(){
     }
 }
 
-var colors = ["#B1F81D", "#919292", "#5582FC", "#fff"]; // Lista de colores predefinidos
-var colorIndex = 0;
-
-function changeTextColor() {
-    var text = document.getElementById("text");
-    text.style.color = colors[colorIndex];
-    colorIndex = (colorIndex + 1) % colors.length; // Avanza al siguiente color en la lista
-}
-
-setInterval(changeTextColor, 1000);
 
 
 

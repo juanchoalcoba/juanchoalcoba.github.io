@@ -1,8 +1,6 @@
-/*AGREGAMOS LA FUENTE QUE VAMOS A UTILIZAR EN LA PAGINA*/
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&family=Encode+Sans:wght@200;400&family=Ysabeau+SC:wght@200;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&display=swap');
 * {
-    font-family: 'Ysabeau SC', sans-serif;
+    font-family: 'Cabin', sans-serif;
 }
 
 
@@ -64,29 +62,12 @@ html {
 }
 
 #inicio {
-    /*
-    , url("./img/wallpaper.jpg");
     
-    */
+    background: radial-gradient(ellipse at left, #022735 0%, #1f1e1e 60%, #000000 100%);
+    
 }
 
-#inicio.video-background {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, .3));
-    background-size:cover;
-    background-position: center center;
-    height: 100vh;
-    position: relative;
-  }
-  
-  #inicio.video-background video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
+
 
   #inicio .contenido {
     position: relative;
@@ -97,7 +78,7 @@ html {
 
 .juantech {
     text-decoration: underline;
-    color: #1e72b1;
+    color: #8aa5b9;
     cursor: pointer;
 }
 
@@ -272,6 +253,7 @@ html {
 }
 
 #sobremi {
+    background: radial-gradient(ellipse at center, #FFFFFF 0%, #DDDDDD 50%, #FFFFFF 100%);
     max-width: 1100px;
     margin: auto;
     padding: 100px 15px;
@@ -319,23 +301,24 @@ html {
 
 #sobremi .sobremi h3 {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
 
 #sobremi .sobremi p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 25px;
-    color: #565656;
+    color: #000000;
     margin-bottom: 12px;
 }
 
 #sobremi .sobremi a {
     display: inline-block;
     text-decoration: none;
-    color: #000;
+    color: #000000;
+    font-weight: bold;
     border-radius: 30px;
     padding: 10px 20px;
     border: 1px solid #000;
@@ -353,15 +336,15 @@ html {
 #servicios {
     padding: 100px 15px;
     text-align: center;
-    background-color: #f3f3f3;
+    background: radial-gradient(ellipse at left, #022735 0%, #1f1e1e 60%, #000000 100%);
 }
 
 #servicios .titulo-seccion {
     font-size: 22px;
     text-transform: uppercase;
-    color: #111135;
+    color: #9f9fbe;
     text-decoration: underline;
-    text-decoration-color: #d3d3d3;
+    text-decoration-color: #640404;
     text-decoration-thickness: 5px;
 }
 
@@ -540,7 +523,7 @@ html {
     max-width: 1100px;
     padding: 100px 0;
     margin: auto;
-    background: rgb(239, 239, 239);
+    background: radial-gradient(ellipse at center, #FFFFFF 0%, #DDDDDD 50%, #FFFFFF 100%);
 }
 
 #portfolio .titulo-seccion {
@@ -564,7 +547,7 @@ html {
     margin: 0 10px;
     position: relative;
     overflow: hidden;
-    background-color: #bfcdd3;
+    background: radial-gradient(ellipse at center, #FFFFFF 0%, #DDDDDD 50%, #FFFFFF 100%);
     border-radius: 10px;
   }
 
@@ -633,6 +616,7 @@ html {
     padding: 20px;
     border-radius: 20px;
     border: none;
+    font-size: 16px;
     border: 1px solid #919191;
 }
 #contacto .contenedor-form .mitad input {
@@ -651,8 +635,8 @@ html {
     font-weight: bold;
 }
 #contacto .btn-enviar:hover {
-    color: #1e72b1;
-    color: #fff;
+    background-color: #1e72b1;
+    color: #d5f3d1;
 }
 footer {
     background-color: #000;
