@@ -368,6 +368,7 @@ html {
 }
 
 #servicios .fila .servicio {
+    background: radial-gradient(ellipse at center, #FFFFFF 0%, #DDDDDD 50%, #FFFFFF 100%);
     max-width: 350px;
     background-color: #fff;
     padding: 30px;
@@ -801,6 +802,7 @@ footer a:hover {
         margin-bottom: 15px;
     }
 }
+
 
 
 
