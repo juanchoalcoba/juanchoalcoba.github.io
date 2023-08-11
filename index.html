@@ -63,6 +63,7 @@
                         </div>
                     </div>
                     <a href="#portfolio">Portfolio</a>
+                    
                 </div>
             </div>
         </section>
@@ -276,8 +277,8 @@
                 </div>
                 <div class="proyecto">
                     <div class="overlay"></div>
-                    <a href="./templatePage/" target="_blank">
-                        <img src="./img/4.png" alt="">
+                    <a href="./menuLateral/" target="_blank">
+                        <img src="./img/menuLateral.png" alt="">
                     </a>
                     <div class="info">
                         <h4>Proyecto simple en HTML Y CSS</h4>
@@ -338,7 +339,8 @@
         <seccion id="contacto">
             <h3 class="titulo-seccion">Contáctame ahora</h3>
             <div class="contenedor-form">
-                <form action="">
+                <form action="https://formspree.io/f/xrgwejop"method="POST"
+                >
                     <div class="fila mitad">
                         <input type="text" placeholder="Nombre completo" class="input-mitad">
                         <input type="text" placeholder="Direccion de Email" class="input-mitad">
@@ -347,10 +349,11 @@
                         <input type="text" placeholder="Tema..." class="input-full">
                     </div>
                     <div class="fila">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje ..."
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Tu mensaje ..."
                             class="input-full"></textarea>
                     </div>
-                    <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                    <input type="hidden" name="_next" value="https://juanchoalcoba.github.io" class="btn-enviar">
+                    <button type="submit" class="btn-enviar">Enviar</button>
                 </form>
             </div>
         </seccion>
@@ -367,6 +370,15 @@
 
 
     </div>
+
+    <div id="cookie-modal" class="modal">
+        <div class="modal-content">
+          <p>Utilizamos cookies para mejorar tu experiencia en el sitio. Al aceptar, estás de acuerdo con nuestra política de cookies.</p>
+          <button id="accept-cookies">Aceptar Todas</button>
+          <button id="reject-cookies">Rechazar</button>
+        </div>
+      </div>
+      <div id="modal-overlay" class="modal-overlay"></div>
 
 
     <script src="app.js"></script>
