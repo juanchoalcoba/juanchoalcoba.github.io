@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-
 * {
     box-sizing: border-box;
 }
@@ -130,45 +129,4 @@ body {
         padding: 1em;
         text-align: left;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-.contact-info {
-    background: #000;
 }

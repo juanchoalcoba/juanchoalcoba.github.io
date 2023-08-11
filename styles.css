@@ -47,6 +47,8 @@
     display: block;
     opacity: 1;
 }
+
+
   
 
 * {
@@ -777,17 +779,15 @@ footer a:hover {
         animation: marquee 20s linear infinite;
         filter: drop-shadow(4px 4px 4px rgb(23, 23, 23));
     }
+
+    /* Clase para desvanecer el contenido hacia arriba */
+
+
     
     @keyframes marquee {
         0% { left: 100%; }
         100% { left: -380%; }
     }
-
-
-
-
-
-
     #icono-nav{
         display: block;
         cursor: pointer;

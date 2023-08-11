@@ -87,7 +87,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
+  AOS.init({
+    duration: 800, // Duración de la animación (en milisegundos)
+    offset: 100,   // Desplazamiento antes de que se inicie la animación (en píxeles)
+});
 
 
 

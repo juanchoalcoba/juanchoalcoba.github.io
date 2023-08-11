@@ -10,6 +10,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title> Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -24,7 +25,7 @@
         <!-- Aquí va tu contenido principal -->
         <section id="inicio" >
             
-            <div class="contenido" class="hidden">
+            <div class="contenido" class="hidden" data-aos="fade-up">
                 <header>
                     <div class="contenido-header">
                         <h1 class="juantech">juanTech &copy</h1>
@@ -71,10 +72,10 @@
 
         <!--SECCION SOBRE MI-->
         <section id="sobremi">
-            <div class="contenedor-foto">
+            <div class="contenedor-foto" data-aos="fade-right">
                 <img src="./img/600.png" alt="">
             </div>
-            <div class="sobremi">
+            <div class="sobremi" data-aos="fade-left">
                 <p class="titulo-seccion">Sobre mi</p>
                 <h2>Hola soy <span>Juan Alcoba</span></h2>
                 <h3>Desarrollador Web</h3>
@@ -91,7 +92,7 @@
         <section id="servicios">
             <h3 class="titulo-seccion">MIS SERVICIOS</h3>
             <div class="fila">
-                <div class="servicio">
+                <div class="servicio" data-aos="fade-right">
                     <span class="icono"><i class="fa-brands fa-html5"></i></span>
                     <h4>HTML</h4>
                     <hr>
@@ -106,7 +107,7 @@
                         etiquetas y elementos para describir la estructura y el contenido de una página web, como
                         encabezados, párrafos, imágenes, enlaces y otros elementos.</p>
                 </div>
-                <div class="servicio">
+                <div class="servicio" data-aos="fade-up">
                     <span class="icono"><i class="fa-brands fa-css3"></i></span>
                     <h4>CSS</h4>
                     <hr>
@@ -121,7 +122,7 @@
                         controlar aspectos como los colores, fuentes, márgenes, espaciados, tamaños y posicionamiento de
                         los elementos en una página web.</p>
                 </div>
-                <div class="servicio">
+                <div class="servicio" data-aos="fade-left">
                     <span class="icono"><i class="fa-brands fa-square-js"></i></span>
                     <h4>Javasript</h4>
                     <hr>
@@ -139,7 +140,7 @@
                 </div>
             </div>
             <div class="fila">
-                <div class="servicio">
+                <div class="servicio" data-aos="fade-right">
                     <span class="icono"><i class="fa-brands fa-react"></i></span>
                     <h4>ReactJs</h4>
                     <hr>
@@ -151,7 +152,7 @@
                     <p>ReactJS es una biblioteca de JavaScript desarrollada por Facebook que se utiliza para construir
                         interfaces de usuario interactivas y dinámicas para aplicaciones web</p>
                 </div>
-                <div class="servicio">
+                <div class="servicio" data-aos="fade-down">
                     <span class="icono"><i class="fa-brands fa-node"></i></span>
                     <h4>NodeJs</h4>
                     <hr>
@@ -165,7 +166,7 @@
                         ser utilizado en el servidor para construir aplicaciones web y servicios del lado del servidor.
                     </p>
                 </div>
-                <div class="servicio">
+                <div class="servicio" data-aos="fade-left">
                     <span class="icono"><i class="fa-brands fa-angular"></i></span>
                     <h4>Angular</h4>
                     <hr>
@@ -229,7 +230,7 @@
         <section id="portfolio">
             <h3 class="titulo-seccion">MIS PROYECTOS</h3>
             <div class="fila">
-                <div class="proyecto">
+                <div class="proyecto" data-aos="fade-right">
                     <div class="overlay"></div>
                     <a href="./commerce/index.html" target="_blank">
                         <img src="./img/1.png" alt="">
@@ -240,7 +241,7 @@
                     </div>
 
                 </div>
-                <div class="proyecto">
+                <div class="proyecto" data-aos="fade-right">
                     <div class="overlay"></div>
                     <a href="./shopCommerce/index.html" target="_blank">
                         <img src="./img/comercio.png" alt="">
@@ -251,7 +252,7 @@
                     </div>
 
                 </div>
-                <div class="proyecto">
+                <div class="proyecto" data-aos="fade-right">
                     <div class="overlay"></div>
                     <a href="./modalJavascript/index.html" target="_blank">
                         <img src="./img/3.png" alt="">
@@ -264,7 +265,7 @@
                 </div>
             </div>
             <div class="fila">
-                <div class="proyecto">
+                <div class="proyecto" data-aos="fade-right">
                     <div class="overlay"></div>
                     <a href="./CssGridForm/" target="_blank">
                         <img src="./img/formgrid.png" alt="">
@@ -275,7 +276,7 @@
                     </div>
 
                 </div>
-                <div class="proyecto">
+                <div class="proyecto" data-aos="fade-right">
                     <div class="overlay"></div>
                     <a href="./menuLateral/" target="_blank">
                         <img src="./img/menuLateral.png" alt="">
@@ -286,7 +287,7 @@
                     </div>
 
                 </div>
-                <div class="proyecto">
+                <div class="proyecto" data-aos="fade-right">
                     <div class="overlay"></div>
                     <a href="./formulario-css-grid-master/index.html" target="_blank">
                         <img src="./img/form.png" alt="">
@@ -299,7 +300,7 @@
                 </div>
             </div>
             <div class="fila">
-                <div class="proyecto">
+                <div class="proyecto" data-aos="fade-right">
                     <div class="overlay"></div>
                     <a href="./AutomotoraWeb/index.html" target="_blank">
                         <img src="./img/autoweb.png" alt="">
@@ -310,7 +311,7 @@
                         <p>Proyecto landing page con html css y javascript</p>
                     </div>
                 </div>
-                <div class="proyecto">
+                <div class="proyecto" data-aos="fade-right">
                     <div class="overlay"></div>
                     <a href="./particles/index.html">
                         <img src="./img/particles.jpg" alt="">
@@ -321,7 +322,7 @@
                         <p>Diseño Web</p>
                     </div>
                 </div>
-                <div class="proyecto">
+                <div class="proyecto" data-aos="fade-right">
                     <div class="overlay"></div>
                     <a href="#">
                         <img src="./img/5.png" alt="">
@@ -336,9 +337,9 @@
         </section>
 
         <!--SECCION CONTACTO-->
-        <seccion id="contacto">
+        <seccion id="contacto"  >
             <h3 class="titulo-seccion">Contáctame ahora</h3>
-            <div class="contenedor-form">
+            <div class="contenedor-form" data-aos="fade-left">
                 <form action="https://formspree.io/f/xrgwejop"method="POST"
                 >
                     <div class="fila mitad">
@@ -380,7 +381,8 @@
       </div>
       <div id="modal-overlay" class="modal-overlay"></div>
 
-
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>">
     <script src="app.js"></script>
 
 </body>
