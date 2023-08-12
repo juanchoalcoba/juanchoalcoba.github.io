@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="styles.css">
     </head>
-<body>
+    <body>
         <!-- Aquí va tu contenido principal -->
         <section id="inicio" >
             
@@ -332,20 +332,17 @@
         <seccion id="contacto"  >
             <h3 class="titulo-seccion">Contáctame ahora</h3>
             <div class="contenedor-form" data-aos="fade-left">
-                <form action="https://formspree.io/f/xrgwejop"method="POST"
-                >
+                <form id="contact-form" action="" method="">
                     <div class="fila mitad">
                         <input type="text" placeholder="Nombre completo" class="input-mitad">
-                        <input type="text" placeholder="Direccion de Email" class="input-mitad">
+                        <input type="email" placeholder="Direccion de Email" class="input-mitad" required>
                     </div>
                     <div class="fila">
                         <input type="text" placeholder="Tema..." class="input-full">
                     </div>
                     <div class="fila">
-                        <textarea name="message" id="" cols="30" rows="10" placeholder="Tu mensaje ..."
-                            class="input-full"></textarea>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Tu mensaje ..." class="input-full"></textarea>
                     </div>
-                    <input type="hidden" name="_next" value="https://juanchoalcoba.github.io" class="btn-enviar">
                     <button type="submit" class="btn-enviar">Enviar</button>
                 </form>
             </div>
@@ -374,7 +371,8 @@
       <div id="modal-overlay" class="modal-overlay"></div>
 
       
-    <script src="app.js"></script>
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>">
 
 </body>

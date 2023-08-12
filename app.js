@@ -4,8 +4,8 @@ window.addEventListener("beforeunload", function() {
 });
 document.addEventListener("DOMContentLoaded", function() {
     AOS.init({
-        duration: 800, // Duración de la animación (en milisegundos)
-        offset: 100,   // Desplazamiento antes de que se inicie la animación (en píxeles)
+        duration: 700, // Duración de la animación (en milisegundos)
+        offset: 50,   // Desplazamiento antes de que se inicie la animación (en píxeles)
     });
    
 });
@@ -81,7 +81,35 @@ document.addEventListener("DOMContentLoaded", function () {
     openModal();
   });
 
-  
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("CZuOOLmyPua4_JPk-");
+    const form = document.getElementById("contact-form");
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        
+        const senderName = form.querySelector('[placeholder="Nombre completo"]').value;
+        const senderEmail = form.querySelector('[placeholder="Direccion de Email"]').value;
+        const subject = form.querySelector('[placeholder="Tema..."]').value;
+        const message = form.querySelector('[name="message"]').value;
+        
+        const templateParams = {
+            to_email: "juanchoalcoba@gmail.com",
+            from_name: senderName,
+            from_email: senderEmail,
+            subject: subject,
+            message: message
+        };
+
+        emailjs.send("service_78w5h3e", "template-pc6uahu", templateParams)
+        .then(function(response) {
+            console.log("Correo electrónico enviado exitosamente", response);
+        }, function(error) {
+            console.error("Error al enviar el correo electrónico", error);
+        });
+    });
+});
 
 
   
