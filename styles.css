@@ -192,20 +192,20 @@ html {
 }
 
 #inicio .contenido .presentacion h2 {
-    font-size: 6.5em;
+    font-size: 6em;
     margin-bottom: 25px;
     text-align: center;
 }
 
 #inicio .contenido .presentacion h2 span {
     font-size: 45px;
-    color: #1f5681;
-    text-decoration:underline;
-    filter: drop-shadow(1px 1px 1px white);
+    color: #cfe7fd;
+    
+    filter: drop-shadow(1px 1px 1px rgb(255, 255, 255));
 }
 
 #inicio .contenido .presentacion h2 .span2 {
-    color: #921e1e;
+    color: #aef3f7;
 }
 
 #inicio .contenido .presentacion .descripcion {
