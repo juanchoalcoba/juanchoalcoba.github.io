@@ -1,0 +1,6 @@
+[submodule "shopCommerce"]
+	path = shopCommerce
+	url = https://github.com/juanchoalcoba/shopCommerce
+[submodule "3drender"]
+	path = 3drender
+	url = https://github.com/juanchoalcoba/three3Drender

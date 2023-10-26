@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="/img/j-solid.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title> Web Developer</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Aquí va tu contenido principal -->
+        <section id="inicio" >
+            
+            <div class="contenido" class="hidden" data-aos="fade-up">
+                <header>
+                    <div class="contenido-header">
+                        <h1 class="juantech">juanTech &copy</h1>
+                        <nav id="nav" class="indice-nav">
+                            <ul id="links">
+                                <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                                <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                                <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                                <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                                <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                            </ul>
+                        </nav>
+
+                        <!--ICONOS DEL MENU RESPONSIVE-->
+                        <div id="icono-nav" onclick="responsiveMenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <!--iconos de las redes sociales-->
+                        <div class="redes-up">
+                            <a href="https://github.com/juanchoalcoba" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/juan-alcoba-a967ba38/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </header>
+                <div class="presentacion">
+                    <p class="bienvenida">Bienvenidos</p>
+                    <h2>Soy <span>Juan Alcoba</span> <span class="span2"> Front-en</span>Developer </h2>
+                    <div class="marquee-container">
+                        <div class="marquee" id="text">
+                            ¡Bienvenidos a mi PORTFOLIO! Soy un apasionado desarrollador Front-end con una pasión por
+                            crear
+                            experiencias digitales cautivadoras.
+                        </div>
+                    </div>
+                    <a href="#portfolio">Portfolio</a>
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <!--SECCION SOBRE MI-->
+        <section id="sobremi">
+            <div class="contenedor-foto" data-aos="fade-right">
+                <img src="./img/601.jpg" alt="">
+            </div>
+            <div class="sobremi" data-aos="fade-left">
+                <p class="titulo-seccion">Sobre mi</p>
+                <h2>Hola soy <span>Juan Alcoba</span></h2>
+                <h3>Desarrollador Web</h3>
+                <p><strong>Como desarrollador Web cuento con experiencia en la creación de sitios web
+                        atractivos y funcionales. He trabajado con HTML, CSS y JavaScript nativo, lo que me permite
+                        tener un
+                        profundo conocimiento de los fundamentos del desarrollo web.</strong></p>
+                <p><strong>Seguir aprendiendo dia a dia es parte fundamental de mi presente </strong></p>
+                <a href="resume.pdf" download>Descargar Resume</a>
+            </div>
+        </section>
+
+        <!--SECCION SERVICIOS-->
+        <section id="servicios">
+            <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+            <div class="fila">
+                <div class="servicio" data-aos="fade-right">
+                    <span class="icono"><i class="fa-brands fa-html5"></i></span>
+                    <h4>HTML</h4>
+                    <hr>
+                    <ul class="servicios-tag">
+                        <li>Web</li>
+                        <li>Graphic</li>
+                        <li>SEO</li>
+                    </ul>
+                    <p><strong>HTML</strong> significa "HyperText Markup Language" (Lenguaje de Marcado de Hipertexto,
+                        en español). Es el
+                        lenguaje de marcado estándar utilizado para crear y estructurar páginas web. HTML utiliza
+                        etiquetas y elementos para describir la estructura y el contenido de una página web, como
+                        encabezados, párrafos, imágenes, enlaces y otros elementos.</p>
+                </div>
+                <div class="servicio" data-aos="fade-up">
+                    <span class="icono"><i class="fa-brands fa-css3"></i></span>
+                    <h4>CSS</h4>
+                    <hr>
+                    <ul class="servicios-tag">
+                        <li>Web</li>
+                        <li>Graphic</li>
+                        <li>SEO</li>
+                    </ul>
+                    <p><strong>CSS</strong> significa "Cascading Style Sheets" (Hojas de Estilo en Cascada, en español).
+                        Es un lenguaje
+                        de estilo utilizado para definir la apariencia y el diseño de un documento HTML. CSS permite
+                        controlar aspectos como los colores, fuentes, márgenes, espaciados, tamaños y posicionamiento de
+                        los elementos en una página web.</p>
+                </div>
+                <div class="servicio" data-aos="fade-left">
+                    <span class="icono"><i class="fa-brands fa-square-js"></i></span>
+                    <h4>Javasript</h4>
+                    <hr>
+                    <ul class="servicios-tag">
+                        <li>Web</li>
+                        <li>Graphic</li>
+                        <li>SEO</li>
+                    </ul>
+                    <p>A diferencia de HTML y CSS, que se utilizan para estructurar y dar estilo a una página web,
+                        <strong>JavaScript</strong>se utiliza para programar el comportamiento y la lógica de una
+                        página. Con
+                        JavaScript, se pueden realizar acciones como validar formularios, modificar el contenido de una
+                        página en tiempo real, realizar cálculos, crear efectos visuales y gestionar eventos de usuario.
+                    </p>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="servicio" data-aos="fade-right">
+                    <span class="icono"><i class="fa-brands fa-react"></i></span>
+                    <h4>ReactJs</h4>
+                    <hr>
+                    <ul class="servicios-tag">
+                        <li>Web</li>
+                        <li>Graphic</li>
+                        <li>SEO</li>
+                    </ul>
+                    <p>ReactJS es una biblioteca de JavaScript desarrollada por Facebook que se utiliza para construir
+                        interfaces de usuario interactivas y dinámicas para aplicaciones web</p>
+                </div>
+                <div class="servicio" data-aos="fade-down">
+                    <span class="icono"><i class="fa-brands fa-node"></i></span>
+                    <h4>NodeJs</h4>
+                    <hr>
+                    <ul class="servicios-tag">
+                        <li>Web</li>
+                        <li>Graphic</li>
+                        <li>SEO</li>
+                    </ul>
+                    <p>Node.js es un entorno de ejecución de JavaScript basado en el motor V8 de Google Chrome. Permite
+                        a los desarrolladores ejecutar código JavaScript fuera del navegador, lo que significa que puede
+                        ser utilizado en el servidor para construir aplicaciones web y servicios del lado del servidor.
+                    </p>
+                </div>
+                <div class="servicio" data-aos="fade-left">
+                    <span class="icono"><i class="fa-brands fa-angular"></i></span>
+                    <h4>Angular</h4>
+                    <hr>
+                    <ul class="servicios-tag">
+                        <li>Web</li>
+                        <li>Graphic</li>
+                        <li>SEO</li>
+                    </ul>
+                    <p>Angular es un framework de desarrollo de aplicaciones web basado en TypeScript desarrollado y
+                        mantenido por Google. Proporciona una estructura robusta y completa para construir aplicaciones
+                        web de una sola página (SPA) y aplicaciones web progresivas (PWA).</p>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCION SKILLS-HABILIDADES-->
+        <div class="contenedor-skills" id="skills">
+            <h3>HABILIDADES</h3>
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>HTML y CSS</p>
+                    <span class="porcentaje">95%</span>
+                </div>
+                <div class="barra">
+                    <div id="html" class=""></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Javascript</p>
+                    <span class="porcentaje">90%</span>
+                </div>
+                <div class="barra">
+                    <div id="js" class=""></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Base de Datos</p>
+                    <span class="porcentaje">80%</span>
+                </div>
+                <div class="barra">
+                    <div id="bd" class=""></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Photoshop</p>
+                    <span class="porcentaje">85%</span>
+                </div>
+                <div class="barra">
+                    <div id="ps" class=""></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Seccion Portafolio-->
+        <section id="portfolio">
+            <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+            <div class="fila">
+                <div class="proyecto" data-aos="fade-right">
+                    <div class="overlay"></div>
+                    <a href="./commerce/index.html" target="_blank">
+                        <img src="./img/1.png" alt="">
+                    </a>
+                    <div class="info">
+                        <h4>e-Commerce-Template</h4>
+                        <p>Diseño HTML CSS y Js</p>
+                    </div>
+
+                </div>
+                <div class="proyecto" data-aos="fade-right">
+                    <div class="overlay"></div>
+                    <a href="./shopCommerce/index.html" target="_blank">
+                        <img src="./img/comercio.png" alt="">
+                    </a>
+                    <div class="info">
+                        <h4>Comercio electronico</h4>
+                        <p>Trabajo con Javascript </p>
+                    </div>
+
+                </div>
+                <div class="proyecto" data-aos="fade-right">
+                    <div class="overlay"></div>
+                    <a href="./modalJavascript/index.html" target="_blank">
+                        <img src="./img/3.png" alt="">
+                    </a>
+                    <div class="info">
+                        <h4>Modal JS</h4>
+                        <p>HTML CSS JAVASCRIPT</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="fila">
+                <div class="proyecto" data-aos="fade-right">
+                    <div class="overlay"></div>
+                    <a href="./CssGridForm/" target="_blank">
+                        <img src="./img/formgrid.png" alt="">
+                    </a>
+                    <div class="info">
+                        <h4>Formulario CSS Grid</h4>
+                        <p>Diseño de Form responsivo</p>
+                    </div>
+
+                </div>
+                <div class="proyecto" data-aos="fade-right">
+                    <div class="overlay"></div>
+                    <a href="./menuLateral/" target="_blank">
+                        <img src="./img/menuLateral.png" alt="">
+                    </a>
+                    <div class="info">
+                        <h4>Proyecto simple en HTML Y CSS</h4>
+                        <p>Diseño Web</p>
+                    </div>
+
+                </div>
+                <div class="proyecto" data-aos="fade-right">
+                    <div class="overlay"></div>
+                    <a href="./formulario-css-grid-master/index.html" target="_blank">
+                        <img src="./img/form.png" alt="">
+                    </a>
+                    <div class="info">
+                        <h4>Formulario responsive</h4>
+                        <p>Trabajo con html css y js</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="fila">
+                <div class="proyecto" data-aos="fade-right">
+                    <div class="overlay"></div>
+                    <a href="./project-prisma1/index.html" target="_blank">
+                        <img src="./img/shigaraki.png" alt="">
+                    </a>
+
+                    <div class="info">
+                        <h4>Automotora web</h4>
+                        <p>Proyecto landing page con html css y javascript</p>
+                    </div>
+                </div>
+                <div class="proyecto" data-aos="fade-right">
+                    <div class="overlay"></div>
+                    <a href="./particles/index.html">
+                        <img src="./img/particles.jpg" alt="">
+                    </a>
+
+                    <div class="info">
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+                <div class="proyecto" data-aos="fade-right">
+                    <div class="overlay"></div>
+                    <a href="#">
+                        <img src="./img/5.png" alt="">
+                    </a>
+
+                    <div class="info">
+                        <h4>Proyecto con ThreeJs</h4>
+                        <p>Web Developer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCION CONTACTO-->
+        <seccion id="contacto"  >
+            <h3 class="titulo-seccion">Contáctame ahora</h3>
+            <div class="contenedor-form" data-aos="fade-left">
+                <form id="contact-form" action="" method="">
+                    <div class="fila mitad">
+                        <input type="text" placeholder="Nombre completo" class="input-mitad">
+                        <input type="email" placeholder="Direccion de Email" class="input-mitad" required>
+                    </div>
+                    <div class="fila">
+                        <input type="text" placeholder="Tema..." class="input-full">
+                    </div>
+                    <div class="fila">
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Tu mensaje ..." class="input-full"></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </form>
+            </div>
+        </seccion>
+
+        <!--SECCION FOOTER-->
+        <footer>
+            <p>Juan Alcoba | Front-end Developer - 2023</p>
+            <div class="redes-down">
+                <a href="https://github.com/juanchoalcoba" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/juan-alcoba-a967ba38/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <div id="cookie-modal" class="modal">
+        <div class="modal-content">
+          <p>Utilizamos cookies para mejorar tu experiencia en el sitio. Al aceptar, estás de acuerdo con nuestra política de cookies.</p>
+          <button id="accept-cookies">Aceptar Todas</button>
+          <button id="reject-cookies">Rechazar</button>
+        </div>
+      </div>
+      <div id="modal-overlay" class="modal-overlay"></div>
+
+      
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>">
+
+</body>
+
+</html>

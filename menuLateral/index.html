@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">&#9776</label>
+            </div>
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Blog</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <div class="capa">
+    </div>
+
+
+
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="#">Portfolio</a>
+                <a href="#">Servicios</a>
+                <a href="#">Suscribirse</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </nav>
+            <label for="btn-menu">&#9932;</label>
+        </div>
+    </div>
+    <div class="central">
+        <h1>Happy Search</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Buscar" oninput="showHideIcon(event)">
+            <i class="fa-solid fa-magnifying-glass" data-toggle="modal" data-target="#myModal"></i>
+        </div>
+        <p>¡Bienvenido a Happy Search, tu compañero en la búsqueda de la felicidad digital</p>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-dismiss="modal">&times;</span>
+            <p>Estamos trabajando en el sitio</p>
+        </div>
+    </div>
+    
+    <script src="script"></script>
+</body>
+
+</html>
