@@ -238,7 +238,7 @@ html {
 }
 
 #sobremi {
-    background: radial-gradient(ellipse at center, #FFFFFF 0%, #DDDDDD 50%, #FFFFFF 100%);
+    background: radial-gradient(ellipse at center, #FFFFFF 0%, #000000 90%, #000000 100%);
     max-width: 1100px;
     margin: auto;
     padding: 100px 15px;
@@ -421,13 +421,17 @@ html {
 
 .contenedor-skills .skill {
     max-width: 600px;
+    color: white;
     margin: 30px auto;
 }
 
-.contenedor-skills .skill .info {
+.contenedor-skills .skill .info  {
     display: flex;
     justify-content: space-between;
     color: #dad7d7;
+}
+.contenedor-skills .skill .info p{
+    color: white;
 }
 
 .contenedor-skills .skill .lista {
@@ -435,11 +439,11 @@ html {
     margin-right: 20px;
     height: 10px;
     width: 10px;
-    background-color: #fff;
+    background-color: rgb(42, 146, 21);
 }
 
 .contenedor-skills .skill .barra {
-    background-color: #919191;
+    background-color: #bbddc1;
     width: 100%;
     height: 6px;
     margin: 10px 0;
@@ -447,28 +451,28 @@ html {
 
 /*Este estilo se aplicara luego mediante javascript*/
 .contenedor-skills .skill .barra-progreso1 {
-    background-color: #fff;
+    background-color: #44b322;
     width: 95%;
     height: 6px;
     animation: progreso1 2s forwards;
 }
 
 .contenedor-skills .skill .barra-progreso2 {
-    background-color: #fff;
+    background-color: #44b322;
     width: 90%;
     height: 6px;
     animation: progreso2 2s forwards;
 }
 
 .contenedor-skills .skill .barra-progreso3 {
-    background-color: #fff;
+    background-color: #44b322;
     width: 95%;
     height: 6px;
     animation: progreso3 2s forwards;
 }
 
 .contenedor-skills .skill .barra-progreso4 {
-    background-color: #fff;
+    background-color: #44b322;
     width: 85%;
     height: 6px;
     animation: progreso4 2s forwards;
@@ -518,7 +522,7 @@ html {
     padding: 100px 0;
     border-radius: 15px;
     margin: auto;
-    background: radial-gradient(ellipse at center, #FFFFFF 0%, #DDDDDD 50%, #FFFFFF 100%);
+    background: radial-gradient(ellipse at center, #000000 0%, #DDDDDD 50%, #000000 100%);
 }
 
 #portfolio .titulo-seccion {
@@ -542,7 +546,7 @@ html {
     margin: 0 10px;
     position: relative;
     overflow: hidden;
-    background: radial-gradient(ellipse at center, #FFFFFF 0%, #DDDDDD 50%, #FFFFFF 100%);
+    background: radial-gradient(ellipse at center, #000000 0%, #DDDDDD 50%, #0f0000 100%);
     border-radius: 10px;
   }
 
@@ -577,6 +581,11 @@ html {
     bottom: -40px;
     transition: .5s;
 }
+
+#portfolio .fila .proyecto .info p {
+    color: #1e72b1;
+}
+
 #portfolio .fila .proyecto:hover .info {
     opacity: 1;
     bottom: 0;
@@ -785,6 +794,7 @@ footer a:hover {
     #sobremi {
         padding: 50px 0;
         display: block;
+        
     }
     #sobremi .contenedor-foto {
         max-width: 200px;
@@ -834,6 +844,29 @@ footer a:hover {
         margin-bottom: 15px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
